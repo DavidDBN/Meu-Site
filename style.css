@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+ul {
+    height: 25px; /* ALTURA */
+    width: 95%; /* LARGURA */
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+}
+
+.img-topo{
+    height: 25px;
+}
+
+video{
+    width: 99vw;
+    min-height: 80vh;
+}
+
+
+.capa{
+    position: absolute;
+    bottom: 20%; /* TOP-CIMA BOTTOM-BAIXO */
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 5px;
+    font-weight: bold;  /* GROSSURA DA FONTE */
+}
+
+.capa-descricao{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.capa-assistir{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;  /* MÃOZINHA */
+}
+
+.capa-info{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.img-carrossel{
+    height: 150px;
+}
+
+/* 
+CLASSES = .
+IDS = #
+*/
+
+#carouselExampleControls{
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+
+}
+
+.titulo-corrosel{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-som {
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position:absolute;
+    top: 100px;
+    right: 20px;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0, 0.8);
+
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+}
